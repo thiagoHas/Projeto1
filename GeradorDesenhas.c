@@ -47,13 +47,13 @@ void editUser(User users[], int numUsers) {
     index--; // Ajuste para o índice do array
     if (index >= 0 && index < numUsers) {
         printf("Digite o novo nome do usuário: ");
-        scanf("%s", users[index].name); // Corrigido: era scanf("%s", &users[index].name);
+        scanf("%s", users[index].name);
         printf("Digite o novo email do usuário: ");
-        scanf("%s", users[index].email); // Corrigido: era scanf("%s", &users[index].email);
+        scanf("%s", users[index].email);
         printf("Digite a nova idade do usuário: ");
         scanf("%d", &users[index].age);
         printf("Digite o novo telefone do usuário: ");
-        scanf("%s", users[index].phone); // Corrigido: era scanf("%s", &users[index].phone);
+        scanf("%s", users[index].phone);
         printf("Informações do usuário atualizadas com sucesso!\n");
     } else {
         printf("Número de usuário inválido!\n");
